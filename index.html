@@ -16,6 +16,13 @@
       window.console.log('YT event: ', payload);
     }
   }
+  function confirm() {
+    setTimeout(function() {
+       window.location.href = '/confirm.html';
+    }, 1000);
+  }
 </script>
 
-<div class="g-ytsubscribe" data-channelid="UC_u_gzSC9mE2LvTJ5dSFdPQ" data-layout="full" data-count="hidden" data-onytevent="onYtEvent"></div>
+<div onclick='confirm()' class="g-ytsubscribe" data-channelid="UC_u_gzSC9mE2LvTJ5dSFdPQ" data-layout="full" data-count="hidden" data-onytevent="onYtEvent">
+Click
+</div>
