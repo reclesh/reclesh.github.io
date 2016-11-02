@@ -5,6 +5,7 @@
 
 <script>
   function onYtEvent(payload) {
+    window.location.href = '/confirm.html';
     if (payload.eventType == 'subscribe') {
 	window.location.href = '/confirm.html';
       // Add code to handle subscribe event.
