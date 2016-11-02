@@ -1,0 +1,13 @@
+<h2>Your confirmation number is: <span id='confirmation-number'></span></h2>
+<script>
+Array.prototype.random = function () {
+  return this[Math.floor((Math.random()*this.length))];
+}
+chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+arr = chars.split('');
+window.onload = function() {
+  var confirmationNumber = '';
+  for(i=0; i < 7; i++) { confirmationNumber += arr.random(); }
+  document.getElementById('confirmation-number').innerHTML = confirmationNumber;
+}
+</script>
